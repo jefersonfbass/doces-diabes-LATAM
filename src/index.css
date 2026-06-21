@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --animate-pulse-scale: pulse-scale 1.8s infinite ease-in-out;
+
+  @keyframes pulse-scale {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.04);
+    }
+  }
+}
+
+/* Ensure smooth scrolling and clean font rendering */
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  background-color: #FAF9F6;
+  color: #2D2524;
+}
+
+/* Base interactive transitions */
+button, a {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}

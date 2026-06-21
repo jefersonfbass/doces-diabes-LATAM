@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Recetas que Cuidan tu Glucosa",
+  "description": "Página premium de recetas prácticas y deliciosas para el control saludable de la glucosa sin renunciar al sabor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

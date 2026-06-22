@@ -67,7 +67,7 @@ const carouselImages = [
 ];
 
 // Asset paths
-const productShowcaseImg = "https://i.ibb.co/DftJSznY/Chat-GPT-Image-17-de-jun-de-2026-15-14-03-Photoroom.webp";
+const productShowcaseImg = "https://i.ibb.co/wh1N5qJj/Chat-GPT-Image-21-de-jun-de-2026-18-19-50-Photoroom.webp";
 
 export default function App() {
   // Navigation / Modal States

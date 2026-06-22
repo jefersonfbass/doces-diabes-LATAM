@@ -63,11 +63,21 @@ const carouselImages = [
     url: "https://i.ibb.co/bG0RSTQ/aee6b7eabcfbb7f95c4f7ee66e00ef27-XL.jpg",
     title: "Copas Dulces Finas",
     desc: "Mousses y postres en porción individual que demuestran que controlar el azúcar puede ser un placer."
+  },
+  {
+    url: "https://i.ibb.co/359psHLN/IMG-1080-JPG.jpg",
+    title: "Galletas Crujientes de Almendra",
+    desc: "Bocados dorados de sabor sutil con nueces seleccionadas y endulzado natural sin impacto glucémico."
+  },
+  {
+    url: "https://i.ibb.co/6RCxr6mM/IMG-1081-JPG.jpg",
+    title: "Muffins Suaves Especiales",
+    desc: "Esponjosos panquecillos preparados de forma limpia, ideales para consentirse saludablemente en desayunos o meriendas."
   }
 ];
 
 // Asset paths
-const productShowcaseImg = "https://i.ibb.co/v434t0QN/Chat-GPT-Image-22-de-jun-de-2026-12-08-51-Photoroom.webp";
+const productShowcaseImg = "https://i.ibb.co/zV7QJ3xp/Design-sem-nome-1.webp";
 
 export default function App() {
   // Navigation / Modal States
@@ -212,16 +222,52 @@ export default function App() {
             {/* Left side text / CTA */}
             <div className="max-w-3xl space-y-6 text-center z-10">
               
-              <p className="text-base sm:text-lg text-[#655A59] font-light max-w-2xl mx-auto leading-relaxed">
-                Descubre 60 recetas deliciosas para calmar tus antojos de dulce sin provocar picos bruscos de azúcar en tu sangre.
+              <p className="text-base sm:text-lg text-[#655A59] font-medium max-w-2xl mx-auto leading-relaxed">
+                🍰 Disfruta postres deliciosos elaborados con ingredientes cuidadosamente seleccionados para quienes desean seguir disfrutando del dulce mientras cuidan su bienestar.
               </p>
+
+              <div className="grid grid-cols-2 gap-2.5 max-w-md mx-auto w-full pt-1.5">
+                <div className="bg-[#FAF9F5]/70 border border-[#DFC5A3]/25 p-2.5 px-3.5 rounded-xl flex items-center gap-2.5 shadow-xs">
+                  <span className="shrink-0 flex items-center justify-center w-4.5 h-4.5 rounded-full bg-[#4E8A66]/10 text-[#4E8A66]">
+                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  </span>
+                  <span className="text-xs font-bold text-[#4A3E3D] text-left leading-tight">
+                    60 recetas fáciles y rápidas
+                  </span>
+                </div>
+                
+                <div className="bg-[#FAF9F5]/70 border border-[#DFC5A3]/25 p-2.5 px-3.5 rounded-xl flex items-center gap-2.5 shadow-xs">
+                  <span className="shrink-0 flex items-center justify-center w-4.5 h-4.5 rounded-full bg-[#4E8A66]/10 text-[#4E8A66]">
+                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  </span>
+                  <span className="text-xs font-bold text-[#4A3E3D] text-left leading-tight">
+                    Ingredientes simples
+                  </span>
+                </div>
+                
+                <div className="bg-[#FAF9F5]/70 border border-[#DFC5A3]/25 p-2.5 px-3.5 rounded-xl flex items-center gap-2.5 shadow-xs">
+                  <span className="shrink-0 flex items-center justify-center w-4.5 h-4.5 rounded-full bg-[#4E8A66]/10 text-[#4E8A66]">
+                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  </span>
+                  <span className="text-xs font-bold text-[#4A3E3D] text-left leading-tight">
+                    Listas en 15 min
+                  </span>
+                </div>
+                
+                <div className="bg-[#FAF9F5]/70 border border-[#DFC5A3]/25 p-2.5 px-3.5 rounded-xl flex items-center gap-2.5 shadow-xs">
+                  <span className="shrink-0 flex items-center justify-center w-4.5 h-4.5 rounded-full bg-[#4E8A66]/10 text-[#4E8A66]">
+                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  </span>
+                  <span className="text-xs font-bold text-[#4A3E3D] text-left leading-tight">
+                    Acceso inmediato
+                  </span>
+                </div>
+              </div>
 
               {/* Mega Hero Button */}
               <div className="pt-4 flex flex-col items-center gap-3">
                 <button
-                  onClick={() => {
-                    window.open("https://pay.hotmart.com/A106432463B?off=9zo69lb3", "_blank");
-                  }}
+                  onClick={scrollToOffers}
                   className="w-full sm:w-auto bg-[#e5a04e] hover:bg-[#d8913b] text-white font-bold text-base px-8 py-5 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-3 tracking-wide"
                 >
                   ¡APROVECHAR EL COMBO COMPLETO!
@@ -627,27 +673,27 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                text: "Cuando me dijeron que tenía que cuidar mi glucosa, pensé que tendría que olvidarme de los postres para siempre. Estas recetas me demostraron que sí es posible seguir disfrutando de algo dulce. Hoy vuelvo a disfrutar esos pequeños momentos sin sentir que me estoy privando de todo.",
+                text: "Estoy muy feliz ❤️ Puede parecer algo pequeño, pero volver a comer un dulce de vez en cuando me hizo muy feliz.",
                 author: "Marta G.",
-                role: "Volví a disfrutar los postres",
+                role: "Volver a comer un dulce",
                 avatarImg: "https://i.ibb.co/1G8T9DGj/mulher.jpg"
               },
               {
-                text: "Siempre fui fan de los panes dulces, pasteles y postres. Lo que más me gustó de este recetario es que las recetas realmente son deliciosas y fáciles de preparar. Ahora, cuando me dan ganas de algo dulce, tengo varias opciones para disfrutar sin sentir culpa.",
+                text: "Tanto tiempo pasando antojos para descubrir que sí existían alternativas para personas que necesitamos cuidarnos más 😭 Ya probé 3 recetas y están deliciosas.",
                 author: "Carlos R.",
-                role: "Por fin dejé de pasar antojos",
+                role: "Existen alternativas deliciosas",
                 avatarImg: "https://i.ibb.co/1GvHmtX2/homem.jpg"
               },
               {
-                text: "Confieso que compré con dudas porque pensé que las recetas llevarían ingredientes caros o difíciles de encontrar. Me sorprendió ver que la mayoría son ingredientes muy comunes. Además, los postres quedan buenísimos y se preparan en muy poco tiempo.",
+                text: "Lo que más tranquilidad me dio fue saber exactamente qué ingredientes estaba usando. Antes tenía muchas dudas y terminaba evitando cualquier postre.",
                 author: "Silvia M.",
-                role: "Mucho más fácil de lo que imaginaba",
+                role: "Ingredientes claros y seguros",
                 avatarImg: "https://i.ibb.co/dw0K131n/mulher.jpg"
               },
               {
-                text: "Lo que más extrañaba era poder comer algo dulce de vez en cuando. Estas recetas me ayudaron a volver a disfrutar de mis postres favoritos de una forma mucho más tranquila. Son fáciles, rápidas y realmente deliciosas. Las recomiendo muchísimo.",
+                text: "Sinceramente, lo único que lamento es no haber encontrado este recetario antes 😅. Me habría ahorrado muchos antojos.",
                 author: "Jorge A.",
-                role: "Ya no siento que me estoy privando",
+                role: "Ojalá lo hubiera encontrado antes",
                 avatarImg: "https://i.ibb.co/vCZrZrPJ/homem-velho.jpg"
               }
             ].map((item, index) => (

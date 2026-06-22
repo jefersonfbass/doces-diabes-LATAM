@@ -894,10 +894,9 @@ export default function App() {
             </div>
 
             {/* PACOTE COMPLETO CARD */}
-            <div className="bg-[#FAF7F2] rounded-3xl border-3 border-[#BA9241] p-8 flex flex-col justify-between shadow-2xl hover:shadow-3xl transition-all duration-300 relative scale-100 md:scale-[1.04] group overflow-hidden text-center items-center w-full">
-              <div className="absolute top-1 right-1 bg-[#BA9241] text-white font-black text-[10px] uppercase tracking-widest px-4 py-1.5 rounded-lg shadow-md z-10 flex items-center justify-center gap-1.5 animate-pulse">
-                <Sparkles className="w-3.5 h-3.5 fill-white/20" />
-                La Opción Más Inteligente
+            <div className="bg-[#FAF7F2] rounded-3xl border-3 border-[#BA9241] p-8 flex flex-col justify-between shadow-2xl hover:shadow-3xl transition-all duration-300 relative scale-100 md:scale-[1.04] group text-center items-center w-full mt-4 md:mt-0">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-red-600 text-white font-black text-[10px] sm:text-[11px] uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg z-10 flex items-center justify-center gap-1 whitespace-nowrap">
+                🔥 MÁS ELEGIDO POR NUESTROS CLIENTES
               </div>
 
               <div className="space-y-6 w-full flex flex-col items-center">
@@ -953,7 +952,7 @@ export default function App() {
               </div>
 
               {/* Button CTA */}
-              <div className="mt-8 pt-6 border-t border-amber-200/40 w-full flex justify-center">
+              <div className="mt-8 pt-6 border-t border-amber-200/40 w-full flex flex-col items-center justify-center">
                 <button
                   onClick={() => {
                     window.open("https://pay.hotmart.com/A106432463B?off=9zo69lb3", "_blank");
@@ -961,8 +960,18 @@ export default function App() {
                   className="w-full max-w-xs bg-gradient-to-r from-[#D97706] to-[#BA9241] hover:from-[#EA580C] hover:to-[#D97706] text-white font-extrabold py-4.5 px-6 rounded-xl text-center text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-2 shadow-md hover:shadow-lg active:scale-95 duration-200"
                 >
                   ELEGIR COMPLETO
-                  <Sparkles className="w-4 h-4 text-white" />
                 </button>
+                
+                {/* Mini guarantee right below the button */}
+                <div className="mt-3.5 flex flex-col items-center gap-1 text-center w-full max-w-xs px-2">
+                  <span className="flex items-center gap-1 text-xs font-black text-amber-800 uppercase tracking-wide">
+                    <ShieldCheck className="w-4 h-4 text-emerald-600 fill-emerald-50 shrink-0" />
+                    Garantía de 7 días
+                  </span>
+                  <p className="text-[11px] text-[#655A59] leading-tight font-medium">
+                    Si no estás satisfecho, te devolvemos tu dinero.
+                  </p>
+                </div>
               </div>
             </div>
 

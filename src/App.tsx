@@ -83,7 +83,7 @@ const carouselImages = [
 ];
 
 // Asset paths
-const productShowcaseImg = new URL("./assets/images/product_showcase_1781549222588.jpg", import.meta.url).href;
+const productShowcaseImg = "https://i.ibb.co/jv81N2xP/Design-Sem-Nome-1-Editado.webp";
 const neideRodriguesImg = new URL("./assets/images/neide_rodrigues_1782152581728.jpg", import.meta.url).href;
 
 export default function App() {
@@ -205,7 +205,7 @@ export default function App() {
               <div className="absolute w-72 h-72 bg-[#DFC5A3]/30 rounded-full blur-3xl -z-10" />
               <div className="absolute w-44 h-44 bg-[#4E8A66]/10 rounded-full blur-xl bottom-4 right-4 -z-10" />
               
-              <div className="relative max-w-full sm:max-w-md w-full p-4">
+              <div className="relative max-w-full sm:max-w-xl w-full p-4">
                 <img
                   src={productShowcaseImg}
                   alt="Recetas que cuidan tu glucosa combo premium"
@@ -214,13 +214,13 @@ export default function App() {
                 />
 
                 {/* Floating satisfaction badge */}
-                <div className="absolute bottom-2 left-2 bg-white/95 rounded-lg border border-amber-200 p-1.5 px-2 shadow-sm flex items-center gap-1.5 max-w-[145px] backdrop-blur-xs">
-                  <span className="w-5 h-5 rounded-full bg-emerald-100 text-[#4E8A66] flex items-center justify-center shrink-0">
-                    <Check className="w-3.5 h-3.5 stroke-[3.5]" />
+                <div className="absolute bottom-4 left-6 bg-white/95 rounded-md border border-amber-200 p-1 px-1.5 shadow-xs flex items-center gap-1 max-w-[125px] backdrop-blur-xs">
+                  <span className="w-4 h-4 rounded-full bg-emerald-50 text-[#4E8A66] flex items-center justify-center shrink-0">
+                    <Check className="w-2.5 h-2.5 stroke-[4]" />
                   </span>
                   <div>
-                    <p className="text-[10px] font-black text-[#4A3E3D] leading-none">Probado y Aprobado</p>
-                    <p className="text-[8.5px] text-[#8A7E7D] mt-0.5 leading-none">Ingredientes 100% seguros</p>
+                    <p className="text-[8.5px] font-black text-[#4A3E3D] leading-none">Probado y Aprobado</p>
+                    <p className="text-[7.5px] text-[#8A7E7D] mt-0.5 leading-none">Ingredientes 100% seguros</p>
                   </div>
                 </div>
               </div>
@@ -326,11 +326,11 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="space-y-4 text-sm md:text-base text-[#4A3E3D] leading-relaxed font-light">
+              <div className="space-y-4 text-base md:text-[17px] text-[#4A3E3D] leading-relaxed font-normal">
                 <p>
                   Durante años trabajé con personas que, como tú, tenían que cuidar su glucosa pero extrañaban disfrutar de un buen postre.
                 </p>
-                <blockquote className="border-l-4 border-[#9E2A3B]/50 pl-4 py-1 italic my-4 text-[#655A59]/90 font-medium">
+                <blockquote className="border-l-4 border-[#9E2A3B]/55 pl-4 py-2 italic my-4 text-[#655A59] text-lg md:text-xl font-semibold">
                   "Muchos me decían: 'Neide, quiero algo dulce, pero tengo miedo de que me haga mal...'"
                 </blockquote>
                 <p>
@@ -339,11 +339,11 @@ export default function App() {
               </div>
 
               {/* Mission statement white card with heart icon */}
-              <div className="bg-[#FAF9F5]/85 border border-[#DFC5A3]/40 p-4 sm:p-5 rounded-2xl flex items-start gap-4 max-w-xl shadow-xs">
-                <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-[#9E2A3B]/10 text-[#9E2A3B]">
-                  <Heart className="w-5 h-5 fill-[#9E2A3B]/20" />
+              <div className="bg-[#FAF9F5]/85 border border-[#DFC5A3]/40 p-5 sm:p-6 rounded-2xl flex items-start gap-4 max-w-xl shadow-xs">
+                <span className="shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-[#9E2A3B]/10 text-[#9E2A3B]">
+                  <Heart className="w-6 h-6 fill-[#9E2A3B]/20" />
                 </span>
-                <p className="text-xs sm:text-sm text-[#4A3E3D] font-medium leading-relaxed">
+                <p className="text-sm sm:text-base text-[#4A3E3D] font-medium leading-relaxed">
                   Mi misión es ayudarte a disfrutar de los dulces con tranquilidad, <strong className="font-bold text-[#9E2A3B]">sin culpa y sin poner en riesgo tu salud.</strong>
                 </p>
               </div>
@@ -370,16 +370,16 @@ export default function App() {
             {/* Right side: Portrait with bento badge card */}
             <div className="lg:col-span-3 relative flex flex-col items-center gap-6 justify-center w-full">
               {/* Floating Bento Badge List - beautiful maroon pill layout matching image */}
-              <div className="bg-[#9E2A3B] text-white p-6 rounded-3xl w-full max-w-[320px] shadow-lg flex flex-col gap-5 text-left border border-white/10 shrink-0">
+              <div className="bg-[#9E2A3B] text-white p-6 sm:p-7 rounded-3xl w-full max-w-[340px] shadow-lg flex flex-col gap-5 text-left border border-white/10 shrink-0">
                 
                 {/* Badge 1 */}
-                <div className="flex gap-4">
-                  <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-amber-300">
-                    <Award className="w-5 h-5" />
+                <div className="flex gap-4 items-center">
+                  <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-white/10 text-amber-300">
+                    <Award className="w-5.5 h-5.5" />
                   </span>
                   <div className="space-y-0.5">
-                    <h4 className="text-xs font-black uppercase tracking-wider text-amber-200">+10 AÑOS</h4>
-                    <p className="text-xs text-rose-50/90 leading-tight">de experiencia en cocina saludable</p>
+                    <h4 className="text-sm font-black uppercase tracking-wider text-amber-200">+10 AÑOS</h4>
+                    <p className="text-sm text-rose-50/90 leading-tight">de experiencia en cocina saludable</p>
                   </div>
                 </div>
 
@@ -387,13 +387,13 @@ export default function App() {
                 <div className="border-t border-white/10" />
 
                 {/* Badge 2 */}
-                <div className="flex gap-4">
-                  <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-rose-200">
-                    <BookOpen className="w-5 h-5" />
+                <div className="flex gap-4 items-center">
+                  <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-white/10 text-rose-200">
+                    <BookOpen className="w-5.5 h-5.5" />
                   </span>
                   <div className="space-y-0.5">
-                    <h4 className="text-xs font-black uppercase tracking-wider text-amber-200">Especialista</h4>
-                    <p className="text-xs text-rose-50/90 leading-tight">en recetas para personas con diabetes y prediabetes</p>
+                    <h4 className="text-sm font-black uppercase tracking-wider text-amber-200">Especialista</h4>
+                    <p className="text-sm text-rose-50/90 leading-tight">en recetas para personas con diabetes y prediabetes</p>
                   </div>
                 </div>
 
@@ -401,13 +401,13 @@ export default function App() {
                 <div className="border-t border-white/10" />
 
                 {/* Badge 3 */}
-                <div className="flex gap-4">
-                  <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-rose-200">
-                    <Heart className="w-5 h-5 fill-white/10" />
+                <div className="flex gap-4 items-center">
+                  <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-white/10 text-rose-200">
+                    <Heart className="w-5.5 h-5.5 fill-white/10" />
                   </span>
                   <div className="space-y-0.5">
-                    <h4 className="text-xs font-black uppercase tracking-wider text-amber-200">Apasionada</h4>
-                    <p className="text-xs text-rose-50/90 leading-tight">por demostrar que es posible comer dulce y cuidar tu salud al mismo tiempo</p>
+                    <h4 className="text-sm font-black uppercase tracking-wider text-amber-200">Apasionada</h4>
+                    <p className="text-sm text-rose-50/90 leading-tight">por demostrar que es posible comer dulce y cuidar tu salud al mismo tiempo</p>
                   </div>
                 </div>
 
@@ -423,7 +423,7 @@ export default function App() {
           {/* Bottom Half: Criteria / Column Cards */}
           <div className="space-y-8">
             <div className="text-center">
-              <h3 className="text-xs sm:text-sm tracking-wider font-extrabold text-[#655A59] uppercase">
+              <h3 className="text-sm sm:text-base md:text-lg tracking-wider font-extrabold text-[#655A59] uppercase">
                 CADA RECETA FUE CREADA BAJO <span className="text-[#9E2A3B] underline decoration-rose-300 decoration-2 underline-offset-4">CRITERIOS MUY CUIDADOSOS</span>:
               </h3>
             </div>
@@ -431,60 +431,60 @@ export default function App() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               
               {/* Card 1 */}
-              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-5 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-3 transition-all duration-300">
+              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-6 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-4 transition-all duration-300">
                 <span className="w-12 h-12 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center shadow-xs">
                   <Droplet className="w-6 h-6 fill-rose-100" />
                 </span>
-                <div className="space-y-1.5">
-                  <h4 className="text-sm font-black text-[#2D2524] leading-tight">
+                <div className="space-y-2">
+                  <h4 className="text-base font-bold text-[#2D2524] leading-tight">
                     Ingredientes de bajo índice glucémico
                   </h4>
-                  <p className="text-xs text-[#655A59] leading-relaxed">
+                  <p className="text-sm text-[#655A59] leading-relaxed">
                     para evitar picos de azúcar en la sangre.
                   </p>
                 </div>
               </div>
 
               {/* Card 2 */}
-              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-5 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-3 transition-all duration-300">
+              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-6 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-4 transition-all duration-300">
                 <span className="w-12 h-12 rounded-full bg-emerald-50 text-[#4E8A66] flex items-center justify-center shadow-xs">
                   <Leaf className="w-6 h-6 fill-emerald-100" />
                 </span>
-                <div className="space-y-1.5">
-                  <h4 className="text-sm font-black text-[#2D2524] leading-tight">
+                <div className="space-y-2">
+                  <h4 className="text-base font-bold text-[#2D2524] leading-tight">
                     Sustitutos inteligentes
                   </h4>
-                  <p className="text-xs text-[#655A59] leading-relaxed">
+                  <p className="text-sm text-[#655A59] leading-relaxed">
                     que mantienen el sabor sin comprometer tu salud.
                   </p>
                 </div>
               </div>
 
               {/* Card 3 */}
-              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-5 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-3 transition-all duration-300">
+              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-6 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-4 transition-all duration-300">
                 <span className="w-12 h-12 rounded-full bg-orange-50 text-orange-600 flex items-center justify-center shadow-xs">
                   <UtensilsCrossed className="w-6 h-6" />
                 </span>
-                <div className="space-y-1.5">
-                  <h4 className="text-sm font-black text-[#2D2524] leading-tight">
+                <div className="space-y-2">
+                  <h4 className="text-base font-bold text-[#2D2524] leading-tight">
                     Recetas probadas y aprobadas
                   </h4>
-                  <p className="text-xs text-[#655A59] leading-relaxed">
+                  <p className="text-sm text-[#655A59] leading-relaxed">
                     en sabor, textura y facilidad.
                   </p>
                 </div>
               </div>
 
               {/* Card 4 */}
-              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-5 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-3 transition-all duration-300">
+              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-6 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-4 transition-all duration-300">
                 <span className="w-12 h-12 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center shadow-xs">
                   <ShieldCheck className="w-6 h-6 fill-amber-100" />
                 </span>
-                <div className="space-y-1.5">
-                  <h4 className="text-sm font-black text-[#2D2524] leading-tight">
+                <div className="space-y-2">
+                  <h4 className="text-base font-bold text-[#2D2524] leading-tight">
                     Equilibrio nutricional
                   </h4>
-                  <p className="text-xs text-[#655A59] leading-relaxed">
+                  <p className="text-sm text-[#655A59] leading-relaxed">
                     para que disfrutes sin culpa y con seguridad.
                   </p>
                 </div>
@@ -493,18 +493,18 @@ export default function App() {
             </div>
 
             {/* Disclaimer Box at the bottom */}
-            <div className="bg-[#FAF9F5] border border-[#DFC5A3]/30 p-4 sm:p-5 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto text-left shadow-xs mt-6">
+            <div className="bg-[#FAF9F5] border border-[#DFC5A3]/30 p-5 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto text-left shadow-xs mt-6">
               <div className="flex items-start gap-3 sm:max-w-2xl">
-                <span className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#e5a04e]/10 text-[#d8913b] mt-0.5">
-                  <ShieldCheck className="w-4.5 h-4.5" />
+                <span className="shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-[#e5a04e]/10 text-[#d8913b] mt-0.5">
+                  <ShieldCheck className="w-5 h-5" />
                 </span>
-                <p className="text-xs text-[#655A59] leading-relaxed">
+                <p className="text-sm text-[#655A59] leading-relaxed">
                   <strong className="text-[#2D2524] font-bold">Este recetario no reemplaza tratamientos médicos.</strong> Está diseñado como un apoyo para llevar una alimentación más consciente, siempre junto con las recomendaciones de tu médico.
                 </p>
               </div>
               <div className="shrink-0 flex flex-col items-center sm:items-end sm:border-l sm:border-[#DFC5A3]/30 sm:pl-6 pt-3 sm:pt-0">
                 <span className="font-signature text-3xl text-[#2D2524] font-bold">Neide Bragança</span>
-                <span className="text-[10px] text-[#9E2A3B] font-medium tracking-wider uppercase mt-1">✓ Recetas Seguras</span>
+                <span className="text-xs text-[#9E2A3B] font-semibold tracking-wider uppercase mt-1">✓ Recetas Seguras</span>
               </div>
             </div>
 

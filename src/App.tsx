@@ -14,7 +14,13 @@ import {
   ChevronRight,
   Apple,
   Clock,
-  Coffee
+  Coffee,
+  Heart,
+  Award,
+  Droplet,
+  Leaf,
+  ShieldCheck,
+  UtensilsCrossed
 } from "lucide-react";
 import { EBOOKS_DATA, FAQS_DATA, EBookItem, RECIPES_DATA } from "./data";
 
@@ -284,6 +290,228 @@ export default function App() {
         </div>
       </section>
 
+      {/* SECCIÓN DE LA AUTORA - NEIDE RODRIGUES */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-[#FAF9F5] border-b border-[#DFC5A3]/25 relative overflow-hidden">
+        <div className="max-w-6xl mx-auto space-y-16">
+          
+          {/* Top Half: Intro, Photo & Badges */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-11 items-start">
+            
+            {/* Left side: Biography/Intro */}
+            <div className="lg:col-span-5 space-y-6 md:space-y-8 text-left">
+              <div className="space-y-2">
+                <span className="text-sm font-bold tracking-wider text-[#9E2A3B]">HOLA, SOY</span>
+                <h2 className="text-5xl md:text-6xl font-normal text-[#2D2524] font-signature leading-none block pt-1 select-none">
+                  Neide Bragança
+                </h2>
+                <p className="text-base font-semibold text-[#655A59] tracking-wide pt-1">
+                  Y creé este recetario pensando en ti.
+                </p>
+              </div>
+
+              {/* Mobile-only vertical chef portrait (visible only on mobile/tablet below the name header) */}
+              <div className="block lg:hidden relative group w-full max-w-[340px] mx-auto rounded-3xl overflow-hidden shadow-xl border-4 border-white transition-all duration-300">
+                <img
+                  src="/src/assets/images/neide_rodrigues_1782152581728.jpg"
+                  alt="Neide Bragança"
+                  className="w-full h-auto object-cover aspect-[3/4]"
+                  referrerPolicy="no-referrer"
+                />
+                
+                {/* Floating identity label at the bottom of the photo */}
+                <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-xs py-2.5 px-4 rounded-xl shadow-md border border-[#DFC5A3]/25 flex flex-col items-center text-center">
+                  <span className="font-signature text-xl text-[#2D2524] font-bold leading-none">Neide Bragança</span>
+                  <span className="text-[10px] uppercase tracking-wider font-bold text-[#8A7E7D] mt-0.5">Creadora de recetas saludables</span>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-sm md:text-base text-[#4A3E3D] leading-relaxed font-light">
+                <p>
+                  Durante años trabajé con personas que, como tú, tenían que cuidar su glucosa pero extrañaban disfrutar de un buen postre.
+                </p>
+                <blockquote className="border-l-4 border-[#9E2A3B]/50 pl-4 py-1 italic my-4 text-[#655A59]/90 font-medium">
+                  "Muchos me decían: 'Neide, quiero algo dulce, pero tengo miedo de que me haga mal...'"
+                </blockquote>
+                <p>
+                  Fue así que decidí recopilar mis mejores recetas en un solo lugar: <strong className="font-extrabold text-[#9E2A3B]">recetas deliciosas, equilibradas y seguras</strong> para quienes necesitan cuidar su salud sin dejar de disfrutar.
+                </p>
+              </div>
+
+              {/* Mission statement white card with heart icon */}
+              <div className="bg-[#FAF9F5]/85 border border-[#DFC5A3]/40 p-4 sm:p-5 rounded-2xl flex items-start gap-4 max-w-xl shadow-xs">
+                <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-[#9E2A3B]/10 text-[#9E2A3B]">
+                  <Heart className="w-5 h-5 fill-[#9E2A3B]/20" />
+                </span>
+                <p className="text-xs sm:text-sm text-[#4A3E3D] font-medium leading-relaxed">
+                  Mi misión es ayudarte a disfrutar de los dulces con tranquilidad, <strong className="font-bold text-[#9E2A3B]">sin culpa y sin poner en riesgo tu salud.</strong>
+                </p>
+              </div>
+            </div>
+
+            {/* Middle Column: Desktop-only vertical chef portrait (side-by-side with text top) */}
+            <div className="hidden lg:block lg:col-span-4">
+              <div className="relative group w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white transition-all duration-305 hover:scale-[1.01]">
+                <img
+                  src="/src/assets/images/neide_rodrigues_1782152581728.jpg"
+                  alt="Neide Bragança"
+                  className="w-full h-auto object-cover aspect-[3/4]"
+                  referrerPolicy="no-referrer"
+                />
+                
+                {/* Floating identity label at the bottom of the photo */}
+                <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-xs py-2.5 px-4 rounded-xl shadow-md border border-[#DFC5A3]/25 flex flex-col items-center text-center">
+                  <span className="font-signature text-xl text-[#2D2524] font-bold leading-none">Neide Bragança</span>
+                  <span className="text-[10px] uppercase tracking-wider font-bold text-[#8A7E7D] mt-0.5">Creadora de recetas saludables</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side: Portrait with bento badge card */}
+            <div className="lg:col-span-3 relative flex flex-col items-center gap-6 justify-center w-full">
+              {/* Floating Bento Badge List - beautiful maroon pill layout matching image */}
+              <div className="bg-[#9E2A3B] text-white p-6 rounded-3xl w-full max-w-[320px] shadow-lg flex flex-col gap-5 text-left border border-white/10 shrink-0">
+                
+                {/* Badge 1 */}
+                <div className="flex gap-4">
+                  <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-amber-300">
+                    <Award className="w-5 h-5" />
+                  </span>
+                  <div className="space-y-0.5">
+                    <h4 className="text-xs font-black uppercase tracking-wider text-amber-200">+10 AÑOS</h4>
+                    <p className="text-xs text-rose-50/90 leading-tight">de experiencia en cocina saludable</p>
+                  </div>
+                </div>
+
+                {/* Divider */}
+                <div className="border-t border-white/10" />
+
+                {/* Badge 2 */}
+                <div className="flex gap-4">
+                  <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-rose-200">
+                    <BookOpen className="w-5 h-5" />
+                  </span>
+                  <div className="space-y-0.5">
+                    <h4 className="text-xs font-black uppercase tracking-wider text-amber-200">Especialista</h4>
+                    <p className="text-xs text-rose-50/90 leading-tight">en recetas para personas con diabetes y prediabetes</p>
+                  </div>
+                </div>
+
+                {/* Divider */}
+                <div className="border-t border-white/10" />
+
+                {/* Badge 3 */}
+                <div className="flex gap-4">
+                  <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-rose-200">
+                    <Heart className="w-5 h-5 fill-white/10" />
+                  </span>
+                  <div className="space-y-0.5">
+                    <h4 className="text-xs font-black uppercase tracking-wider text-amber-200">Apasionada</h4>
+                    <p className="text-xs text-rose-50/90 leading-tight">por demostrar que es posible comer dulce y cuidar tu salud al mismo tiempo</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* Divider */}
+          <div className="border-t border-[#DFC5A3]/20 w-full pt-4" />
+
+          {/* Bottom Half: Criteria / Column Cards */}
+          <div className="space-y-8">
+            <div className="text-center">
+              <h3 className="text-xs sm:text-sm tracking-wider font-extrabold text-[#655A59] uppercase">
+                CADA RECETA FUE CREADA BAJO <span className="text-[#9E2A3B] underline decoration-rose-300 decoration-2 underline-offset-4">CRITERIOS MUY CUIDADOSOS</span>:
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              
+              {/* Card 1 */}
+              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-5 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-3 transition-all duration-300">
+                <span className="w-12 h-12 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center shadow-xs">
+                  <Droplet className="w-6 h-6 fill-rose-100" />
+                </span>
+                <div className="space-y-1.5">
+                  <h4 className="text-sm font-black text-[#2D2524] leading-tight">
+                    Ingredientes de bajo índice glucémico
+                  </h4>
+                  <p className="text-xs text-[#655A59] leading-relaxed">
+                    para evitar picos de azúcar en la sangre.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 2 */}
+              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-5 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-3 transition-all duration-300">
+                <span className="w-12 h-12 rounded-full bg-emerald-50 text-[#4E8A66] flex items-center justify-center shadow-xs">
+                  <Leaf className="w-6 h-6 fill-emerald-100" />
+                </span>
+                <div className="space-y-1.5">
+                  <h4 className="text-sm font-black text-[#2D2524] leading-tight">
+                    Sustitutos inteligentes
+                  </h4>
+                  <p className="text-xs text-[#655A59] leading-relaxed">
+                    que mantienen el sabor sin comprometer tu salud.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3 */}
+              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-5 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-3 transition-all duration-300">
+                <span className="w-12 h-12 rounded-full bg-orange-50 text-orange-600 flex items-center justify-center shadow-xs">
+                  <UtensilsCrossed className="w-6 h-6" />
+                </span>
+                <div className="space-y-1.5">
+                  <h4 className="text-sm font-black text-[#2D2524] leading-tight">
+                    Recetas probadas y aprobadas
+                  </h4>
+                  <p className="text-xs text-[#655A59] leading-relaxed">
+                    en sabor, textura y facilidad.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 4 */}
+              <div className="bg-white border border-[#DFC5A3]/25 hover:border-[#DFC5A3]/50 p-5 rounded-2xl shadow-xs hover:shadow-sm text-center flex flex-col items-center space-y-3 transition-all duration-300">
+                <span className="w-12 h-12 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center shadow-xs">
+                  <ShieldCheck className="w-6 h-6 fill-amber-100" />
+                </span>
+                <div className="space-y-1.5">
+                  <h4 className="text-sm font-black text-[#2D2524] leading-tight">
+                    Equilibrio nutricional
+                  </h4>
+                  <p className="text-xs text-[#655A59] leading-relaxed">
+                    para que disfrutes sin culpa y con seguridad.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Disclaimer Box at the bottom */}
+            <div className="bg-[#FAF9F5] border border-[#DFC5A3]/30 p-4 sm:p-5 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto text-left shadow-xs mt-6">
+              <div className="flex items-start gap-3 sm:max-w-2xl">
+                <span className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#e5a04e]/10 text-[#d8913b] mt-0.5">
+                  <ShieldCheck className="w-4.5 h-4.5" />
+                </span>
+                <p className="text-xs text-[#655A59] leading-relaxed">
+                  <strong className="text-[#2D2524] font-bold">Este recetario no reemplaza tratamientos médicos.</strong> Está diseñado como un apoyo para llevar una alimentación más consciente, siempre junto con las recomendaciones de tu médico.
+                </p>
+              </div>
+              <div className="shrink-0 flex flex-col items-center sm:items-end sm:border-l sm:border-[#DFC5A3]/30 sm:pl-6 pt-3 sm:pt-0">
+                <span className="font-signature text-3xl text-[#2D2524] font-bold">Neide Bragança</span>
+                <span className="text-[10px] text-[#9E2A3B] font-medium tracking-wider uppercase mt-1">✓ Recetas Seguras</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
       {/* SEÇÃO 3: LO QUE VAS A RECIBIR */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-[#FAF9F6]/30 border-y border-[#DFC5A3]/10 text-center relative overflow-hidden">
         {/* Decorative subtle background glows */}
@@ -308,12 +536,24 @@ export default function App() {
               </div>
               <div className="pr-4">
                 <h3 className="font-extrabold text-[#4A3E3D] text-base leading-snug">
-                  Postres deliciosos, probados y aprobados con amor
+                  + de 60 recetas que NO ELEVAN tu glucosa
                 </h3>
               </div>
             </div>
 
             {/* Item 2 */}
+            <div className="relative bg-white p-5 rounded-2xl border border-emerald-100/60 hover:border-emerald-300 shadow-xs hover:shadow-md transition-all duration-350 flex flex-row items-center gap-4 text-left group">
+              <div className="w-12 h-12 rounded-xl bg-[#4E8A66]/10 text-[#4E8A66] flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-[#4E8A66]/20 transition-all duration-300">
+                <BookOpen className="w-6 h-6 stroke-[1.8]" />
+              </div>
+              <div className="pr-4">
+                <h3 className="font-extrabold text-[#4A3E3D] text-base leading-snug">
+                  Lista de ingredientes permitidos
+                </h3>
+              </div>
+            </div>
+
+            {/* Item 3 */}
             <div className="relative bg-white p-5 rounded-2xl border border-emerald-100/60 hover:border-emerald-300 shadow-xs hover:shadow-md transition-all duration-350 flex flex-row items-center gap-4 text-left group">
               <div className="w-12 h-12 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-orange-100/80 transition-all duration-300">
                 <Clock className="w-6 h-6 stroke-[1.8]" />
@@ -325,7 +565,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Item 3 */}
+            {/* Item 4 */}
             <div className="relative bg-white p-5 rounded-2xl border border-emerald-100/60 hover:border-emerald-300 shadow-xs hover:shadow-md transition-all duration-350 flex flex-row items-center gap-4 text-left group">
               <div className="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-amber-100/80 transition-all duration-300">
                 <Coffee className="w-6 h-6 stroke-[1.8]" />
@@ -337,7 +577,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Item 4 */}
+            {/* Item 5 */}
             <div className="relative bg-white p-5 rounded-2xl border border-emerald-100/60 hover:border-emerald-300 shadow-xs hover:shadow-md transition-all duration-350 flex flex-row items-center gap-4 text-left group">
               <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-emerald-100/80 transition-all duration-300">
                 <Apple className="w-6 h-6 stroke-[1.8]" />
@@ -349,7 +589,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Item 5 */}
+            {/* Item 6 */}
             <div className="relative bg-white p-5 rounded-2xl border border-emerald-100/60 hover:border-emerald-350 shadow-xs hover:shadow-md transition-all duration-350 flex flex-row items-center gap-4 text-left group">
               <div className="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-purple-100/80 transition-all duration-300">
                 <Smile className="w-6 h-6 stroke-[1.8]" />
@@ -379,7 +619,7 @@ export default function App() {
       <section className="py-12 bg-[#211A19] overflow-hidden w-full relative">
         <div className="max-w-4xl mx-auto px-4 mb-8 text-center">
           <h2 className="text-2xl sm:text-3.5xl font-extrabold text-[#FAF9F6] tracking-tight uppercase">
-            ¡SOLO DE VERLOS SE ANTOJAN! MIRA LO QUE TE ESPERA: 😋🍰
+            Mira algunas recetas que encontrarás:
           </h2>
           <div className="w-16 h-1 bg-[#C5A880] mx-auto rounded-full mt-3" />
         </div>
@@ -420,6 +660,79 @@ export default function App() {
               Todas las recetas fueron creadas con ingredientes cuidadosamente seleccionados para que disfrutes de tus dulces favoritos de forma segura.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* SEÇÃO 7.5: DEPOIMENTOS REAIS */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#FAF9F6] via-[#FFFDFB] to-[#F5EFE6] border-y border-[#DFC5A3]/30 relative overflow-hidden font-sans" id="depoimentos">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#BA9241]/5 rounded-full blur-[120px] pointer-events-none" />
+
+        <div className="max-w-6xl mx-auto space-y-16 relative z-10">
+          
+          <div className="text-center space-y-4 max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4.5xl font-black text-[#4A3E3D] tracking-tight leading-tight">
+              Experiencias Reales
+            </h2>
+            <div className="w-16 h-1 bg-[#BA9241] mx-auto rounded-full mt-2" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                text: "Estoy muy feliz ❤️ Puede parecer algo pequeño, pero volver a comer un dulce de vez en cuando me hizo muy feliz.",
+                author: "Marta G.",
+                role: "Volver a comer un dulce",
+                avatarImg: "https://i.ibb.co/1G8T9DGj/mulher.jpg"
+              },
+              {
+                text: "Tanto tiempo pasando antojos para descubrir que sí existían alternativas para personas que necesitamos cuidarnos más 😭 Ya probé 3 recetas y están deliciosas.",
+                author: "Camila R.",
+                role: "Existen alternativas deliciosas",
+                avatarImg: "https://i.ibb.co/RpvgBzjp/1beee65de5a967b8b7f8c88f76.webp"
+              },
+              {
+                text: "Lo que más tranquilidad me dio fue saber exactamente qué ingredientes estaba usando. Antes tenía muchas dudas y terminaba evitando cualquier postre.",
+                author: "Silvia M.",
+                role: "Ingredientes claros y seguros",
+                avatarImg: "https://i.ibb.co/dw0K131n/mulher.jpg"
+              },
+              {
+                text: "Sinceramente, lo único que lamento es no haber encontrado este recetario antes 😅. Me habría ahorrado muchos antojos.",
+                author: "Jorge A.",
+                role: "Ojalá lo hubiera encontrado antes",
+                avatarImg: "https://i.ibb.co/LzcQkGzz/ai-image-generation-fake-faces-people-nvidia-5c18b20b472c2-700.webp"
+              }
+            ].map((item, index) => (
+              <div 
+                key={index} 
+                className="bg-white rounded-3xl border border-[#DFC5A3]/45 p-6 flex flex-col justify-start text-center shadow-[0_12px_35px_rgba(197,168,128,0.12)] hover:shadow-[0_20px_50px_rgba(186,146,65,0.18)] hover:border-[#BA9241]/40 hover:-translate-y-1 transition-all duration-300 relative group"
+              >
+                <span className="absolute top-6 right-6 text-3xl font-serif text-[#BA9241]/15 group-hover:text-[#BA9241]/30 pointer-events-none font-bold">
+                  “
+                </span>
+
+                <div className="pb-4 mb-4 border-b border-dashed border-[#DFC5A3]/40 flex flex-col items-center justify-center gap-3 w-full">
+                  <img
+                    src={item.avatarImg}
+                    alt={item.author}
+                    referrerPolicy="no-referrer"
+                    className="w-14 h-14 rounded-full object-cover shrink-0 shadow-md border-2 border-[#BA9241]/40"
+                  />
+                  <div className="flex flex-col items-center text-center">
+                    <span className="text-base font-bold text-[#4A3E3D]">{item.author}</span>
+                    <span className="text-xs sm:text-sm text-[#8A7E7D] font-semibold leading-normal mt-0.5">{item.role}</span>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <p className="text-sm sm:text-base text-[#5C4F4E] leading-relaxed font-normal italic">
+                    &ldquo;{item.text}&rdquo;
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
@@ -657,78 +970,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* SEÇÃO 7.5: DEPOIMENTOS REAIS */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0F0A09] via-[#090505] to-[#010101] border-b border-neutral-950 relative overflow-hidden font-sans" id="depoimentos">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#BA9241]/5 rounded-full blur-[120px] pointer-events-none" />
 
-        <div className="max-w-6xl mx-auto space-y-16 relative z-10">
-          
-          <div className="text-center space-y-4 max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4.5xl font-black text-white tracking-tight leading-tight uppercase">
-              VOCES DE LA COMUNIDAD (TESTIMONIOS REALES):
-            </h2>
-            <div className="w-16 h-1 bg-[#BA9241] mx-auto rounded-full mt-2" />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                text: "Estoy muy feliz ❤️ Puede parecer algo pequeño, pero volver a comer un dulce de vez en cuando me hizo muy feliz.",
-                author: "Marta G.",
-                role: "Volver a comer un dulce",
-                avatarImg: "https://i.ibb.co/1G8T9DGj/mulher.jpg"
-              },
-              {
-                text: "Tanto tiempo pasando antojos para descubrir que sí existían alternativas para personas que necesitamos cuidarnos más 😭 Ya probé 3 recetas y están deliciosas.",
-                author: "Carlos R.",
-                role: "Existen alternativas deliciosas",
-                avatarImg: "https://i.ibb.co/1GvHmtX2/homem.jpg"
-              },
-              {
-                text: "Lo que más tranquilidad me dio fue saber exactamente qué ingredientes estaba usando. Antes tenía muchas dudas y terminaba evitando cualquier postre.",
-                author: "Silvia M.",
-                role: "Ingredientes claros y seguros",
-                avatarImg: "https://i.ibb.co/dw0K131n/mulher.jpg"
-              },
-              {
-                text: "Sinceramente, lo único que lamento es no haber encontrado este recetario antes 😅. Me habría ahorrado muchos antojos.",
-                author: "Jorge A.",
-                role: "Ojalá lo hubiera encontrado antes",
-                avatarImg: "https://i.ibb.co/vCZrZrPJ/homem-velho.jpg"
-              }
-            ].map((item, index) => (
-              <div 
-                key={index} 
-                className="bg-[#140D0C]/80 rounded-3xl border border-amber-900/20 p-6 flex flex-col justify-start text-center shadow-[0_8px_30px_rgb(0,0,0,0.5)] hover:border-[#BA9241]/35 hover:-translate-y-1 transition-all duration-300 relative group"
-              >
-                <span className="absolute top-6 right-6 text-3xl font-serif text-[#BA9241]/10 group-hover:text-[#BA9241]/20 pointer-events-none font-bold">
-                  “
-                </span>
-
-                <div className="pb-4 mb-4 border-b border-dashed border-amber-950/40 flex flex-col items-center justify-center gap-3 w-full">
-                  <img
-                    src={item.avatarImg}
-                    alt={item.author}
-                    referrerPolicy="no-referrer"
-                    className="w-14 h-14 rounded-full object-cover shrink-0 shadow-md border-2 border-[#BA9241]/40"
-                  />
-                  <div className="flex flex-col items-center text-center">
-                    <span className="text-base font-bold text-neutral-100">{item.author}</span>
-                    <span className="text-xs sm:text-sm text-[#DFD3CE] font-semibold leading-normal mt-0.5">{item.role}</span>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <p className="text-sm sm:text-base text-neutral-200 leading-relaxed font-normal italic">
-                    &ldquo;{item.text}&rdquo;
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
 
       {/* SEÇÃO 8: GARANTIA */}
       <section className="py-12 bg-[#FAF8F5] border-y border-[#DFC5A3]/10">

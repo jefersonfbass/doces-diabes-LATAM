@@ -67,7 +67,7 @@ const carouselImages = [
 ];
 
 // Asset paths
-const productShowcaseImg = "https://i.ibb.co/wh1N5qJj/Chat-GPT-Image-21-de-jun-de-2026-18-19-50-Photoroom.webp";
+const productShowcaseImg = "https://i.ibb.co/v434t0QN/Chat-GPT-Image-22-de-jun-de-2026-12-08-51-Photoroom.webp";
 
 export default function App() {
   // Navigation / Modal States
@@ -197,13 +197,13 @@ export default function App() {
                 />
 
                 {/* Floating satisfaction badge */}
-                <div className="absolute -bottom-2 -left-2 bg-white/95 rounded-xl border border-amber-200 p-3 shadow-md flex items-center gap-2 max-w-[180px] backdrop-blur-xs">
-                  <span className="w-8 h-8 rounded-full bg-emerald-100 text-[#4E8A66] flex items-center justify-center shrink-0">
-                    <Check className="w-5 h-5 stroke-[3]" />
+                <div className="absolute bottom-2 left-2 bg-white/95 rounded-lg border border-amber-200 p-1.5 px-2 shadow-sm flex items-center gap-1.5 max-w-[145px] backdrop-blur-xs">
+                  <span className="w-5 h-5 rounded-full bg-emerald-100 text-[#4E8A66] flex items-center justify-center shrink-0">
+                    <Check className="w-3.5 h-3.5 stroke-[3.5]" />
                   </span>
                   <div>
-                    <p className="text-[11px] font-bold text-[#4A3E3D] leading-none">Probado y Aprobado</p>
-                    <p className="text-[9.5px] text-[#8A7E7D] mt-0.5">Ingredientes 100% seguros</p>
+                    <p className="text-[10px] font-black text-[#4A3E3D] leading-none">Probado y Aprobado</p>
+                    <p className="text-[8.5px] text-[#8A7E7D] mt-0.5 leading-none">Ingredientes 100% seguros</p>
                   </div>
                 </div>
               </div>

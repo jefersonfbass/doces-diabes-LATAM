@@ -83,7 +83,8 @@ const carouselImages = [
 ];
 
 // Asset paths
-const productShowcaseImg = "https://i.ibb.co/zV7QJ3xp/Design-sem-nome-1.webp";
+const productShowcaseImg = new URL("./assets/images/product_showcase_1781549222588.jpg", import.meta.url).href;
+const neideRodriguesImg = new URL("./assets/images/neide_rodrigues_1782152581728.jpg", import.meta.url).href;
 
 export default function App() {
   // Navigation / Modal States
@@ -312,7 +313,7 @@ export default function App() {
               {/* Mobile-only vertical chef portrait (visible only on mobile/tablet below the name header) */}
               <div className="block lg:hidden relative group w-full max-w-[340px] mx-auto rounded-3xl overflow-hidden shadow-xl border-4 border-white transition-all duration-300">
                 <img
-                  src="/src/assets/images/neide_rodrigues_1782152581728.jpg"
+                  src={neideRodriguesImg}
                   alt="Neide Bragança"
                   className="w-full h-auto object-cover aspect-[3/4]"
                   referrerPolicy="no-referrer"
@@ -352,7 +353,7 @@ export default function App() {
             <div className="hidden lg:block lg:col-span-4">
               <div className="relative group w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white transition-all duration-305 hover:scale-[1.01]">
                 <img
-                  src="/src/assets/images/neide_rodrigues_1782152581728.jpg"
+                  src={neideRodriguesImg}
                   alt="Neide Bragança"
                   className="w-full h-auto object-cover aspect-[3/4]"
                   referrerPolicy="no-referrer"
